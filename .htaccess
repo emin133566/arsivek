@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^article/([^/]+)$ article.php?slug=$1 [L,QSA]
+RewriteRule ^article/([^/]+)/$ article.php?slug=$1 [L,QSA]
